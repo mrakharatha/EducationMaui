@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.StackLayoutDemo"
+             Title="StackLayoutDemo">
+   
+
+<StackLayout  Orientation="Vertical" VerticalOptions="Center" Spacing="3" >
+        <Label Text="TopLearn Maui .net" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="DarkOrange"></Label>
+        <Label Text="TopLearn Maui .net" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="DarkCyan"></Label>
+        <Label Text="TopLearn Maui .net" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="DarkRed"></Label>
+        <Label Text="TopLearn Maui .net" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="DarkSeaGreen"></Label>
+</StackLayout>
+
+</ContentPage>
