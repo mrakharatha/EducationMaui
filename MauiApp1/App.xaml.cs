@@ -14,6 +14,8 @@ public partial class App : Application
         };
 
 
-        MainPage = navigationPage;
+        //MainPage = navigationPage;
+
+        MainPage = new FlyoutPageDemo();
     }
 }
