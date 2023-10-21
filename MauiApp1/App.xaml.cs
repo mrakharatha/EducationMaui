@@ -20,6 +20,8 @@ public partial class App : Application
 
         //MainPage = new TabbedPageDemo();
 
-        MainPage = new StackLayoutDemo();
+       // MainPage = new StackLayoutDemo();
+
+       MainPage = new GridDemo();
     }
 }
