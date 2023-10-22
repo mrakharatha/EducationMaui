@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.AbsoluteDemo"
+             Title="AbsoluteDemo">
+
+    <AbsoluteLayout>
+
+<Button Text="TopLearn" AbsoluteLayout.LayoutBounds="0.5,0.5,0.5,0.1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,XProportional,YProportional"></Button>
+<Button Text="dot Net Maui" AbsoluteLayout.LayoutBounds="100,100,100,100"></Button>
+
+    </AbsoluteLayout>
+
+
+</ContentPage>
