@@ -24,6 +24,8 @@ public partial class App : Application
 
         //MainPage = new GridDemo();
 
-        MainPage = new AbsoluteDemo();
+       // MainPage = new AbsoluteDemo();
+        
+       MainPage = new FlexDemo();
     }
 }
