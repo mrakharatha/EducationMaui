@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.PresentData"
+             Title="PresentData">
+<ScrollView>
+    <StackLayout>
+        <BoxView Color="DarkCyan" HeightRequest="200"/>
+
+        <Border Padding="5" StrokeThickness="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10,10,10,10" ></RoundRectangle>
+            </Border.StrokeShape>
+            <Label Text="TopLearn" FontSize="Title" FontAttributes="Italic" TextColor="Red" HorizontalTextAlignment="Center"/>
+        </Border>
+
+        <Frame>
+            <Image Source="dotnet_bot.png" />
+        </Frame>
+
+        <Line Stroke="Black" X1="0" Y1="0" X2="100" Y2="50" StrokeThickness="2"/>
+
+        <Rectangle Fill="Red" Stroke="Black" StrokeThickness="2" HeightRequest="50" HorizontalOptions="Center" WidthRequest="150" RadiusX="10" RadiusY="10"  />
+
+        <Polygon  Fill="LightBlue" Points="40 10,70 80,10 50" Stroke="DarkBlue" StrokeThickness="2"/>
+        
+        <Polyline Stroke="Red" Points="0 0 , 10 30 , 15 0 , 18 60 , 23 30 , 35 30 , 40 0 , 43 60 , 48 30 , 100 30"/>
+
+        <Path Aspect="Uniform" HorizontalOptions="Center" Stroke="Black" Data="M 10 , 100 L 100 , 100 100 , 50Z"/>
+
+            <WebView Source="https://www.google.com/"/>
+
+    </StackLayout>
+</ScrollView>
+</ContentPage>

@@ -26,6 +26,8 @@ public partial class App : Application
 
        // MainPage = new AbsoluteDemo();
         
-       MainPage = new FlexDemo();
+     //  MainPage = new FlexDemo();
+       
+     MainPage = new PresentData();
     }
 }
