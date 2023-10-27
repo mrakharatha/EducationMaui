@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.InputControls"
+             Title="InputControls">
+
+    <StackLayout>
+        <Slider x:Name="Slider" Minimum="1" Maximum="10"
+                MinimumTrackColor="Green"
+                MaximumTrackColor="Blue"
+                ThumbColor="Yellow"
+                ValueChanged="Slider_OnValueChanged"/>
+
+        <Label x:Name="LblSlider"/>
+
+        <Stepper  x:Name="Stepper" Minimum="2" Maximum="10" Increment="2" ValueChanged="Stepper_OnValueChanged"/>
+        <Label x:Name="LblStepper"/>
+
+        <Switch/>
+        <DatePicker/>
+        <TimePicker/>
+
+        <Entry x:Name="TxtInput" TextChanged="TxtInput_OnTextChanged" Completed="TxtInput_OnCompleted" Placeholder="enter phone number"  Keyboard="Numeric"/>
+
+<Editor AutoSize="TextChanges"/>
+
+    </StackLayout>
+
+</ContentPage>
