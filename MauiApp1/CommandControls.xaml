@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CommandControls"
+             Title="CommandControls">
+
+    <StackLayout>
+        <Button x:Name="Btn1" Text="Click Me !" Clicked="Btn1_OnClicked"/>
+        <ImageButton Source="dotnet_bot.svg" Clicked="Btn1_OnClicked"/>
+
+        <RadioButton Content="RadioButton 1" GroupName="GroupName1" />
+        <RadioButton Content="RadioButton 2" GroupName="GroupName1"/>
+        <RadioButton Content="RadioButton 3" GroupName="GroupName1"/>
+
+
+        <RadioButton Content="RadioButton 4" GroupName="GroupName2" />
+        <RadioButton Content="RadioButton 5" GroupName="GroupName2"/>
+        <RadioButton Content="RadioButton 6" GroupName="GroupName2"/>
+
+        <SearchBar x:Name="SrcInput" SearchButtonPressed="SrcInput_OnSearchButtonPressed" />
+
+
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem Text="Delete" BackgroundColor="DarkBlue"  Invoked="SwipeItem_OnInvoked"/>
+                    <SwipeItem Text="Favorite" BackgroundColor="DarkRed"  Invoked="SwipeItem_OnInvoked"/>
+                </SwipeItems>
+            </SwipeView.LeftItems>
+
+            <Grid WidthRequest="300" HeightRequest="60" BackgroundColor="LightGray">
+                <Label Text="Swipe Right" VerticalOptions="Center" HorizontalOptions="Center"/>
+            </Grid>
+
+        </SwipeView>
+
+        <HorizontalStackLayout>
+            <CheckBox IsChecked="True"/>
+            <Label Text="CheckBox"  VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+    </StackLayout>
+</ContentPage>

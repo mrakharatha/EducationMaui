@@ -28,6 +28,6 @@ public partial class App : Application
         
      //  MainPage = new FlexDemo();
        
-     MainPage = new PresentData();
+     MainPage = new CommandControls();
     }
 }
