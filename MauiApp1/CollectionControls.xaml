@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CollectionControls"
+             Title="CollectionControls">
+    <!--<StackLayout>
+        <ActivityIndicator IsRunning="True"/>
+        <ProgressBar Progress="0.9"/>
+
+        <CarouselView IndicatorView="Indicator">
+            <CarouselView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>سید محمد رضا آزاد</x:String>
+                    <x:String>امیر حسین آزاد الحسینی</x:String>
+                    <x:String>علی حاجی رضایی</x:String>
+                </x:Array>
+            </CarouselView.ItemsSource>
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame BorderColor="DarkGray" CornerRadius="5" HeightRequest="100"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .}"></Label>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+
+        </CarouselView>
+
+        <IndicatorView x:Name="Indicator" IndicatorColor="LightGray" SelectedIndicatorColor="DarkGray" HorizontalOptions="Center" Margin="5" />
+
+    </StackLayout>-->
+
+    <!--<ListView HasUnevenRows="True">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>سید محمد رضا آزاد</x:String>
+                <x:String>امیر حسین آزاد الحسینی</x:String>
+                <x:String>علی حاجی رضایی</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                <StackLayout>
+                    <Frame Margin="10"  BorderColor="DarkGray" CornerRadius="5" HeightRequest="100"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                        <Label Text="{Binding .}"></Label>
+                    </Frame>
+                </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>-->
+
+
+    <!--<CollectionView SelectionMode="Multiple">
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>سید محمد رضا آزاد</x:String>
+                <x:String>امیر حسین آزاد الحسینی</x:String>
+                <x:String>علی حاجی رضایی</x:String>
+            </x:Array>
+        </CollectionView.ItemsSource>
+
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                    <StackLayout>
+                        <Frame Margin="10"  BorderColor="DarkGray" CornerRadius="5" HeightRequest="100"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                            <Label Text="{Binding .}"></Label>
+                        </Frame>
+                    </StackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+
+    </CollectionView>-->
+
+
+    <!--<StackLayout>
+        <Picker VerticalOptions="Center" BackgroundColor="DarkGray">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>سید محمد رضا آزاد</x:String>
+                    <x:String>امیر حسین آزاد الحسینی</x:String>
+                    <x:String>علی حاجی رضایی</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+    </StackLayout>-->
+
+
+    <TableView Intent="Settings">
+        <TableRoot>
+            <TableSection Title="First Section">
+                <TextCell Text="TextCell" Detail="TextCell Detail"/>
+                <EntryCell Label="Entry Label"  Text="EntryCell Text"/>
+                <SwitchCell Text="SwitchCell Text"/>
+                <ImageCell Detail="ImageCell Detail" Text="ImageCell Text" ImageSource="dotnet_bot.svg"/>
+            </TableSection>
+            <TableSection Title="Second Section">
+                <TextCell Text="TextCell" Detail="TextCell Detail"/>
+                <EntryCell Label="Entry Label"  Text="EntryCell Text"/>
+                <SwitchCell Text="SwitchCell Text"/>
+                <ImageCell Detail="ImageCell Detail" Text="ImageCell Text" ImageSource="dotnet_bot.svg"/>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+
+
+
+</ContentPage>
